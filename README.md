@@ -49,11 +49,11 @@ Based on the official Docker images from Elastic:
 ### SELinux
 
 On distributions which have SELinux enabled out-of-the-box you will need to either re-context the files or set SELinux
-into Permissive mode in order for docker-elk to start properly. For example on Redhat and CentOS, the following will
+into Permissive mode in order for elk to start properly. For example on Redhat and CentOS, the following will
 apply the proper context:
 
 ```console
-$ chcon -R system_u:object_r:admin_home_t:s0 docker-elk/
+$ chcon -R system_u:object_r:admin_home_t:s0 elk/
 ```
 
 ### Docker for Windows
